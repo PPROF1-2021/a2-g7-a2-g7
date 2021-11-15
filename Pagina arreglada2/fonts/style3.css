@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icomoon.eot?ydwovo');
+  src:  url('icomoon.eot?ydwovo#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?ydwovo') format('truetype'),
+    url('icomoon.woff?ydwovo') format('woff'),
+    url('icomoon.svg?ydwovo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+ 
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+   
+   
+
+.icon-facebook:before {
+  content: "\e900";
+  color: #1877f2;
+}
+.icon-gmail:before {
+  content: "\e902";
+  color: #d14836;
+}
+.icon-instagram:before {
+  content: "\e901";
+  color: #e440d6;
+}
+
+.icon-youtube:before {
+  content: "\e904";
+  color: #f00;
+}
+  
+  .social {
+	position: fixed; 
+	left: 0; 
+	top: 200px;
+	z-index: 2000;  
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+	background:black;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .icon-icon-facebook {background:#1877f2;} 
+  .social ul li .icon-gmail{background:black;}
+	.social ul li .icon-instagram{background:black;}
+
+  
+	.social ul li .icon-youtube{background:black;}
+	.social ul li .social {background: #666666;}
+
+	.social ul li a:hover {
+		background:#3b5998; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
