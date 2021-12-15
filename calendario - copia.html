@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+   crossorigin="anonymous"></script>
+   <script type= "text/javascript" src="js/bootstrap-datepicker.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/calendario.css">
+    <link rel="stylesheet" href="css/styles.scss">
+    <link rel="stylesheet" href="css/breadcrums.css"> 
+    <div class="wrapper">
+      <ul>
+        <li><a href="index.html">
+          <i class="fas fa-home icon"></i>
+          <p>Inicio</p>
+          </a></li>
+          <li><a href="contacto.html#inicio">
+              <i class="far fa-credit-card icon"></i>
+              <p>Contacto</p>
+          </a></li>
+      
+          <li ><a href="login-copia2.html">
+              <i class="fas fa-tshirt icon"></i>
+              <p>Login</p>
+              </a></li>
+              <li class="active"><a href="calendario - copia.html">
+                <i class="fas fa-shopping-cart icon"></i>
+                <p>calendario</p>
+                </a></li>
+          
+      </ul>
+    </div>
+<script> 
+$(function() {
+    $('.dates #user1').datepicker({
+        'format': 'dd-mm-yyyy',
+        'autoclose': true 
+    });
+});</script>
+    <title>Turnos para castracion</title>
+</head>
+<body>
+  <div class="contenedor__todo">
+     <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Turnos para castracion
+  </button>
+  
+  <!-- Modal -->
+  <div action="turno_calendario.php" method="post" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Elige una Fecha</h4>
+        </div>
+        <div class="modal-body">
+            <div class="dates">
+                
+                <input type="text" autocomplete="off" id= "user1" class="form-control" placeholder="dd-mm-yyyy"/>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close <button>
+            <li><a href="hora.html">
+              <i class="fas fa-home icon"></i>
+              <p>Elegir hora</p>
+              </a></li>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="js/script.js"></script>
+<script src="js/calendario.js"></script>
+</body>
+</html>
